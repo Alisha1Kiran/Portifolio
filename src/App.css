@@ -1,0 +1,203 @@
+.body{
+  background-color: rgb(250, 250, 250);
+}
+
+.aboutBody{
+  background-image: url(./assets/images/HomeBG.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+  /* text-align: right; */
+}
+
+.aboutDetails{
+  padding-top: 250px;
+  padding-left: 400px;
+  padding-right: 200px;
+}
+
+.mainTitle{
+  color: #347571;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  transform: scale(0.5);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+.subTitle{
+  color: #35b276;
+  transform: scale(0.5);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+.aboutMe{
+  color: #35b276;
+  transform: scale(0.5);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+.skillBody{
+  height: 100vh; 
+  /* width: 75%; */
+}
+
+.skillList1{
+  background-color: #f7fdf3;
+  height: 150px;
+}
+
+.skillList2{
+  background-color: #ecf8e5;
+  height: 150px;
+}
+
+.skillList3{
+  background-color: #dcf4ce;
+  height: 150px;
+}
+
+.skillSubList{
+  list-style-type: none;
+  color: #347571;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: larger;
+  text-shadow: 2px 2px 5px rgb(80, 145, 95);
+}
+
+.projectBody{
+  transform: scale(0.5);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+.expBody{
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 170px 0 170px;
+}
+
+.expHeading{
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: #5ec57e;
+  transform: scale(0.5);
+  animation: zoomIn 1.5s ease forwards;
+}
+
+.nav{
+  --bs-nav-link-color: #5ec57c !important;
+}
+ 
+
+.nav-pills {
+  /* --bs-nav-pills-border-radius: var(--bs-border-radius); */
+  --bs-nav-pills-link-active-color: #fff !important;
+  --bs-nav-pills-link-active-bg: #67b773 !important;
+}
+
+.tabContainer{
+  margin-bottom: 100px;
+  /* background-color: #f7fdf3; */
+}
+
+.tab-content>.active {
+  text-align: left;
+    /* padding-top: 30px; */
+}  
+
+.contact{
+  background-image: url("./assets/images/ContactBG.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  animation: pulseZoom 10s infinite alternate;
+}
+
+.contactHeading,.contactData{
+  color:#35b276;
+}
+
+.contactSubHeading{
+  color:#347571;
+} 
+
+.custom-indicators{
+  position: absolute;
+  right: 0;
+  left:0; 
+  bottom: 5px;
+  z-index: 2;
+}
+
+.custom-indicators > button{
+  width: 100px;
+  margin: 3px;
+  background-color: #347571;
+  color: #ffffff;
+  border-radius: 10px;
+  border-color: #347571;
+}
+
+.projectBody{
+  /* height: 100vh; */
+  /* width: 500px; */
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: #347571;
+  background-color: #6e6e6d;
+}
+
+@keyframes pulseZoom {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 0.9; }
+      100% { transform: scale(1.2); opacity: 0.8; }
+    }
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 772px) {
+  
+  .aboutBody{
+    background-image: url(./assets/images/ContactBG.png);
+  }
+
+  .aboutDetails{
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .skillBody{
+    padding-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .skillList1,.skillList2,.skillList3{
+    height: 200px;
+  }
+
+  .expBody{
+    padding: 30px 120px 0 120px;
+  }
+
+}
+
+@media (max-width: 772px) {
+  .myPic {
+    display: block; /* Show the div on screens less than 772px */
+  }
+}
+
+@media (min-width: 773px) {
+  .myPic {
+    display: none; /* Hide the div on screens 773px and above */
+  }
+}  
