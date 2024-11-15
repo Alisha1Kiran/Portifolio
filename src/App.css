@@ -213,7 +213,10 @@
     background-size: cover;
     background-position: right;
     height: auto;
-    
+    margin-bottom: 50px;
+  }
+  .skillBody {
+    height: auto;
   }
   .skillList1{
     height: 300px;
