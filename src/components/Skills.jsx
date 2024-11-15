@@ -10,13 +10,13 @@ const Skills = () => {
         <div className="skillList1">
             <h2 className="subTitle">Front End</h2>
             <ul className="skillSubList row">
-                <li className="col-xs-6 col-sm-6 col-lg-4">HTML5</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">CSS3</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">Bootstrap5</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">JavaScript</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">TypeScript</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">Angular</li>
-                <li className="col-xs-6 col-sm-6 col-lg-4">React</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">HTML5</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">CSS3</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">Bootstrap5</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">JavaScript</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">TypeScript</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">Angular</li>
+                <li className="col-xs-4 col-sm-6 col-lg-4">React</li>
             </ul>
         </div>
         <div className='skillList2'>

@@ -26,6 +26,7 @@
 
 .subTitle{
   color: #35b276;
+  text-align: center;
   transform: scale(0.5);
   animation: zoomIn 1.5s ease forwards;
 }
@@ -34,6 +35,10 @@
   color: #35b276;
   transform: scale(0.5);
   animation: zoomIn 1.5s ease forwards;
+}
+
+.myPic {
+  display: none; /* Show the div on screens less than 772px */
 }
 
 .skillBody{
@@ -121,11 +126,19 @@
 } 
 
 .custom-indicators{
-  position: absolute;
+  position: fixed;
   right: 0;
   left:0; 
   bottom: 5px;
   z-index: 2;
+}
+
+.carousel-indicators{
+  display: none !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: fixed !important;
 }
 
 .custom-indicators > button{
@@ -167,12 +180,17 @@
   
   .aboutBody{
     background-image: url(./assets/images/ContactBG.png);
+    max-width: 100%;
   }
 
   .aboutDetails{
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .myPic {
+    display: block; /* Show the div on screens less than 772px */
   }
 
   .skillBody{
@@ -190,14 +208,8 @@
 
 }
 
-@media (max-width: 772px) {
-  .myPic {
-    display: block; /* Show the div on screens less than 772px */
+@media screen and (max-width: 550px) {
+  .skillList1{
+    height: 300px;
   }
 }
-
-@media (min-width: 773px) {
-  .myPic {
-    display: none; /* Hide the div on screens 773px and above */
-  }
-}  
