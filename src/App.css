@@ -209,6 +209,12 @@
 }
 
 @media screen and (max-width: 550px) {
+  .aboutBody{
+    background-size: cover;
+    background-position: right;
+    height: auto;
+    
+  }
   .skillList1{
     height: 300px;
   }
